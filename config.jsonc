@@ -1,0 +1,194 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "$HOME/Pictures/baEdited.png",
+    "width": 40,
+    "padding": {
+      "top": 10,
+      "left": 4,
+      "right": 8,
+    },
+  },
+  "display": {
+    "key": {
+      "width": 32,
+    },
+    "separator": "ㅤ⋘∣⋙ㅤ",
+    "color": {
+      "output": "#b4befe",
+      "separator": "#cdd6f4",
+    },
+    "percent": {
+      "type": 11,
+      "color": {
+        "green": "#50FA7B",
+        "yellow": "#F1FA8C",
+        "red": "#FF5555",
+      },
+    },
+    "bar": {
+      "border": {
+        "left": "【 ",
+        "right": " 】",
+      },
+      "char": {
+        "elapsed": " ",
+        "total": " ",
+      },
+    },
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "format": "\t\t{#1;#cdd6f4}󰜴 {#3;4;#b4befe}abc{#0;1;#fcc624} 󰌽 {#3;4;#b4befe}xyz{#0;1;#cdd6f4} 󰜱",
+    },
+    "break",
+    {
+      "type": "os",
+      "key": "{#1;#eba0ac}{#0;#f38ba8} Distribution        ",
+      "format": "{2}",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#eba0ac}├{#0;#f38ba8} SystemKernel       ",
+      "format": "linux-zen",
+    },
+    {
+      "type": "packages",
+      "key": "{#1;#eba0ac}├󰏖{#0;#f38ba8} SystemPackages     ",
+    },
+    {
+      "type": "lm",
+      "key": "{#1;#eba0ac}├󰍂{#0;#f38ba8} DisplayManager     ",
+      "format": "{1}",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#eba0ac}├󱠠{#0;#f38ba8} BootManager        ",
+      "format": "rEFInd",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#eba0ac}├󰮮{#0;#f38ba8} InitramfsGenerator ",
+      "format": "dracut",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#eba0ac}└󱂈{#0;#f38ba8} SystemInitializer  ",
+      "format": "systemd",
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "{#1;#fab387}{#0;#f9e2af} WindowManager       ",
+      "format": "{1}",
+    },
+    {
+      "type": "custom",
+      "format": "Catppuccin-Mauve-Dark",
+      "key": "{#1;#fab387}├󰉼{#0;#f9e2af} Theme              ",
+    },
+    {
+      "type": "custom",
+      "format": "tela-circle-catppuccin-dark",
+      "key": "{#1;#fab387}├{#0;#f9e2af} IconTheme          ",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#fab387}├{#0;#f9e2af} CursorTheme        ",
+      "format": "catppuccin-mocha-dark",
+    },
+    {
+      "type": "custom",
+      "format": "Inter Medium",
+      "key": "{#1;#fab387}├{#0;#f9e2af} SystemFont         ",
+    },
+    {
+      "type": "terminal",
+      "key": "{#1;#fab387}├{#0;#f9e2af} SystemTerminal     ",
+      "format": "{1}",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#fab387}├{#0;#f9e2af} TerminalFont       ",
+      "format": "JetBrainMonoNF Medium",
+    },
+    {
+      "type": "shell",
+      "key": "{#1;#fab387}└{#0;#f9e2af} ShellLanguage      ",
+      "format": "{1}",
+    },
+
+    "break",
+    {
+      "type": "host",
+      "key": "{#1;#94e2d5}{#0;#a6e3a1} Device              ",
+      "format": "Lenovo {1}",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#94e2d5}├󰻠{#0;#a6e3a1} CPU                ",
+      "format": "Intel Core i5-8265U",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#94e2d5}├󰍛{#0;#a6e3a1} GPU                ",
+      "format": "Intel UHD Graphics 620",
+    },
+    //{
+    // "type": "CPUUsage",
+    //"key": "{#1;#94e2d5}├{#0;#a6e3a1} CPUUsage           ",
+    //"format": "{avg-bar} {##cdd6f4}【 {avg} {##cdd6f4}】",
+    //},
+    {
+      "type": "memory",
+      "key": "{#1;#94e2d5}├{#0;#a6e3a1} Memory             ",
+      "format": "{percentage-bar} {used} {##cdd6f4} {##b4befe}{total} {##cdd6f4}【 {percentage} {##cdd6f4}】",
+    },
+    {
+      "type": "disk",
+      "key": "{#1;#94e2d5}├󰉉{#0;#a6e3a1} Storage            ",
+      "format": "{size-percentage-bar} {size-used} {##cdd6f4} {##b4befe}{size-total} {##cdd6f4}【 {size-percentage} {##cdd6f4}】",
+    },
+    {
+      "type": "swap",
+      "key": "{#1;#94e2d5}├󰣁{#0;#a6e3a1} Swap               ",
+      "format": "{percentage-bar} {used} {##cdd6f4} {##b4befe}{total} {##cdd6f4}【 {percentage} {##cdd6f4}】",
+    },
+
+    {
+      "type": "custom",
+      "key": "{#1;#94e2d5}├󰹑{#0;#a6e3a1} DisplayExternal    ",
+      "format": "{##b4befe}1920 {##cdd6f4}󰟿 {##b4befe}1080 {##cdd6f4} {##b4befe}24{##c0caf5}󰉾 {##cdd6f4} {##b4befe}120 Hz",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#94e2d5}├{#0;#a6e3a1} DisplayInternal    ",
+      "format": "{##b4befe}1366 {##cdd6f4}󰟿 {##b4befe}768 {##cdd6f4} {##b4befe}13{##c0caf5}󰉾 {##cdd6f4} {##b4befe}60 Hz",
+    },
+    {
+      "type": "command",
+      "key": "{#1;#94e2d5}├󱦂{#0;#a6e3a1} LocalIP            ",
+      "text": "ip address show wlan0 | grep -w inet | awk -F ' ' '{print $2}' | cut -d '/' -f 1",
+    },
+    {
+      "type": "publicIP",
+      "key": "{#1;#94e2d5}├󰩟{#0;#a6e3a1} PublicIP           ",
+      "format": "{1}",
+    },
+    {
+      "type": "custom",
+      "key": "{#1;#94e2d5}└󰇖{#0;#a6e3a1} DNS                ",
+      "format": "{##b4befe}1.1.1.2 {##cdd6f4} {##b4befe}1.1.1.1 {##cdd6f4} {##b4befe}8.8.8.8",
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\t\t{#1;#ffe300}󰮯{##dedeff}ㅤ{##11111b}󰊠 {##f38ba8}󰊠 {##a6e3a1}󰊠 {##f9e2af}󰊠 {##89b4fa}󰊠 {##cba6f7}󰊠 {##89dceb}󰊠 {##cdd6f4}󰊠",
+    },
+    "break",
+  ],
+}
